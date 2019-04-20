@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+     android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <VideoView tools:ignore="ExtraText"
+           android:id="@+id/video"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                    android:id="@+id/goo_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/frame_style"
+                    android:textSize="@dimen/button_text_size"
+                    android:textColor="@color/frame_base"
+                    android:text="@string/goo_btn_name"/>
+            <Button
+                    android:id="@+id/chi_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/goo_button"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:background="@drawable/frame_style"
+                    android:textSize="@dimen/button_text_size"
+                    android:textColor="@color/frame_base"
+                    android:text="@string/chi_btn_name"/>
+            <Button
+                    android:id="@+id/par_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/chi_button"
+                    android:layout_marginTop="@dimen/button_margin"
+                    android:background="@drawable/frame_style"
+                    android:textSize="@dimen/button_text_size"
+                    android:textColor="@color/frame_base"
+                    android:text="@string/par_btn_name"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

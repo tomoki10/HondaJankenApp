@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">#本田とじゃんけん</string>
+    <string name="goo_btn_name">#本田にグーで勝つ</string>
+    <string name="chi_btn_name">#本田にチョキで勝つ</string>
+    <string name="par_btn_name">#本田にパーで勝つ</string>
+    <string name="result_title">結果発表</string>
+</resources>
